@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using jQuery</title>
+
+	<!-- Import css styling here-->
+</head>
+<body>
+
+	<form>
+		<input type="text" readonly="true" size="50px" class="txtBox" value="This is just a test project... more to come soon" name="">
+
+		<br/><br/>
+		<input type="reset">
+
+		<hr/>
+		<div class="btnAct" style="cursor:pointer;background:red;width:50px;height:50px;border-radius: 50px; color:red" >
+			
+		</div>
+	</form>
+	<!-- Import your jQuery source code here
+		remember to point the src to the file
+	-->
+	<script src="" ></script>
+
+	<!-- JQuery code to change the color of text to red -->	
+	<script type="text/javascript">
+
+		
+		$(document).ready(function (){
+
+			$('.btnAct').click(function(){
+				alert('hy, i will now change the color of the text from  black to red...');
+				$('.txtBox').css('color', 'red');
+			})
+				
+		})
+		
+
+	</script>
+</body>
+</html>
